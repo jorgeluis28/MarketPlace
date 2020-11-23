@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Mandurah Checkout - 1 </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://www.jsdelivr.com/package/gh/FortAwesome/Font-Awesome">
+    <link rel="stylesheet" href="../../Assets/scss/style.css">
+</head>
+
+<body>
+    <!--======== header =========-->
+    <header class="container-fluid">
+        <!-- .navbar -->
+        <div class="topnav" id="myTopnav">
+            <a href="#contact"> CONTACT </a>
+            <a href="#chest"> COMMUNITY CHEST </a>
+            <a href="#fuel"> FUEL OFFER </a>
+            <a href="#shop"> SHOP </a>
+            <a href="#home" class="active"> HOME </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <span class="logo"> <span class="logo_text"> Mandurah </span> <img src="../../Assets/image/logo.png"> </span>
+        </div>
+        <!-- search bar, toggle bar-->
+        <div class="action_bar">
+            <div class="action_bar01">
+                <i class="fa fa-th-list" id="sidebarCollapse"></i>
+                <i class="fa fa-home"> </i>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-circle"></i> <span>Hello Micheal!</span><b class="caret"></b> </a>
+                    </li>
+                </ul>
+                <div class="input-group">
+                    <input type="text" name="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="action_bar02">
+                <div class="cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    4 items
+                </div>
+                <div class="toggle_btn">
+                    $13.44  <label class="switch"> <input type="checkbox"> <span class="slider round"></span> </label>
+                </div>
+            </div>
+            <div class="action_bar02 mobile_show">
+                <div class="cart">
+                    <i class="fa fa-shopping-cart"></i> 4  &nbsp; &nbsp; $13.44 &nbsp; <i class="fa fa-eye"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search_bar mobile_show">
+            <input type="text" name="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <!--======== section =========-->
+    <section>
+        <!--=== left sidebar ===-->
+        <div class="wrapper">
+            <nav id="sidebar">
+                <ul class="list-unstyled components">                
+                    <li>
+                        <a href="#mylists" data-toggle="collapse" aria-expanded="false"> My Lists </a>
+                        <ul class="collapse list-unstyled" id="mylists">
+                            <li>
+                                <a href="#weekendshop" data-toggle="collapse" aria-expanded="false"> Weekend Shop </a>
+                                <ul class="collapse list-unstyled" id="weekendshop">
+                                    <li><a href="#"> Weekend Shop 01 </a></li>
+                                    <li><a href="#"> Weekend Shop 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#midweekshop" data-toggle="collapse" aria-expanded="false"> Midweek Shop </a>
+                                <ul class="collapse list-unstyled" id="midweekshop">
+                                    <li><a href="#"> Midweek Shop 01 </a></li>
+                                    <li><a href="#"> Midweek Shop 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#bolognaise" data-toggle="collapse" aria-expanded="false"> Bolognaise Ingredients </a>
+                                <ul class="collapse list-unstyled" id="bolognaise">
+                                    <li><a href="#"> Bolognaise 01 </a></li>
+                                    <li><a href="#"> Bolognaise 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#snacks" data-toggle="collapse" aria-expanded="false"> Snacks </a>
+                                <ul class="collapse list-unstyled" id="snacks">
+                                    <li><a href="#"> Snacks 01 </a></li>
+                                    <li><a href="#"> Snacks 02 </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"> Manage Lists </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#myfavourites" data-toggle="collapse" aria-expanded="false">My Favourites</a>
+                        <ul class="collapse list-unstyled" id="myfavourites">
+                            <li><a href="#football"> Football </a></li>
+                            <li><a href="#basketball"> Basketball </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#orderhistory" data-toggle="collapse" aria-expanded="false"> Order History </a>
+                        <ul class="collapse list-unstyled" id="orderhistory">
+                            <li><a href="#deliveryfood"> Delivery Food </a></li>
+                            <li><a href="#meeting"> Metting </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#specials" data-toggle="collapse" aria-expanded="false"> Specials </a>
+                        <ul class="collapse list-unstyled" id="specials">
+                            <li><a href="#miracle"> Miracle </a></li>
+                            <li><a href="#magic"> Magic </a></li>
+                            <li><a href="#star"> Star </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#alldepartments" data-toggle="collapse" aria-expanded="false"> All Departments </a>
+                        <ul class="collapse list-unstyled" id="alldepartments">
+                            <li><a href="#fruit" aria-expanded="false"> Fruit & Vegetables </a></li>
+                            <li><a href="#bakery" aria-expanded="false"> Bakery </a></li>
+                            <li><a href="#dried" aria-expanded="false"> Dried Fruit & Nuts </a></li>
+                            <li><a href="#milk" aria-expanded="false"> Milk, Dairy & Eggs </a></li>
+                            <li><a href="#chees" aria-expanded="false"> Chees & Acompaniments </a></li>
+                            <li><a href="#cereals" aria-expanded="false"> Cereals & Muesli </a></li>
+                            <li><a href="#deli" aria-expanded="false"> Deli </a></li>
+                            <li><a href="#deserts" aria-expanded="false"> Chilled Meals & Deserts </a></li>
+                            <li><a href="#biscuits" aria-expanded="false"> Biscuits, Snacks & Chips </a></li>
+                            <li><a href="#frozen" aria-expanded="false"> Frozen Goods </a></li>
+                            <li><a href="#grains" aria-expanded="false"> Grains, Rice & Flours </a></li>
+                            <li><a href="#pastas" aria-expanded="false"> Pastas </a></li>
+                            <li><a href="#olis" aria-expanded="false"> Olis & Vinegars </a></li>
+                            <li><a href="#Herbs & Spices" aria-expanded="false"> herbs </a></li>
+                            <li><a href="#meat" aria-expanded="false"> Meat </a></li>
+                            <li><a href="#coffee" aria-expanded="false"> Coffee & Tea </a></li>
+                            <li><a href="#seafood" aria-expanded="false"> Seafood </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--=== main content ===-->
+        <form method="post" action="" class="main_content">
+            <!-- Checkout -->
+            <p id="content_title"> Checkout </p>
+            <!-- Collection method -->
+            <p id="collection_text"> Collection method </p>
+            <div class="collection_block">
+                <div class="delivery_pickup">
+                    <span> <input type="radio" name="delivery" checked> Delivery</span>
+                    <span> <input type="radio" name="delivery"> Pick up - Shop 10/175 Mandurah Terrace, Mandurah WA 6210. </span>
+                </div>
+                <!-- Pickup Time -->
+                <label> Pickup Time </label>
+                <div class="text-center">
+                    <p style="font-size: 18px;"> Dec 2020 </p>
+                    <div class="col-md-12" style="margin: 30px 15px;">
+                        <i class="fa fa-caret-right"></i>
+                        <i class="fa fa-caret-left"></i>
+                        <ol class="progress-bar">
+                            <li class="is-active"><span>Today</span><p>Mon</p></li>  
+                            <li class="is-active"><span>12</span><p>Tue</p></li>  
+                            <li class="is-active"><span>13</span><p>Wed</p></li>
+                            <li class="is-active"><span>14</span><p>Thu</p></li>  
+                            <li class="is-active"><span>15</span><p>Fri</p></li>
+                            <li class="is-active"><span>16</span><p>Sat</p></li>
+                            <li class="is-active"><span>17</span><p>Sun</p></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row morning">
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <p class="morning_title"> Morning </p>
+                        <img src="../../Assets/image/morning.png">
+                        <p class="error_text"> No times avaiable</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <p class="morning_title"> Afternoon </p>
+                        <img src="../../Assets/image/afternoon.png">
+                        <div><input type="radio" name="afternoon"> &nbsp; 12pm-02pm</div>
+                        <div><input type="radio" name="afternoon"> &nbsp; 02pm-04pm</div>
+                        <div><input type="radio" checked name="afternoon"> &nbsp; 12pm-06pm</div>
+                    </div>
+                </div>
+                <!-- Who will be picking up the groceries? -->
+                <div class="grocery">
+                    <label> Who will be picking up the groceries? </label>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div><input type="radio" checked name="pickup"> I will be <br><br> Michael Stevens <br>04 1234 5678 <br> Michael @gaggle.net.au </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 groceries_inputs">
+                            <div class="flex">
+                                <div><input type="radio" name="pickup"> Someone else</div>
+                                <p class="disabled_text"> * required </p>
+                            </div>
+                            <div class="justify-content-between flex">
+                                <input type="text" placeholder="First Name*" name="firstname" class="checkout_input01">
+                                <input type="text" placeholder="Last Name*" name="lastname" class="checkout_input01">
+                            </div>                            
+                            <input type="number" placeholder="Mobile Number*" name="mobilenumber" class="checkout_input02">
+                            <input type="email" placeholder="Email*" name="email" class="checkout_input02">
+                        </div>
+                    </div>
+                </div>
+                <!-- Preferred Update Method -->
+                <div class="preferred">
+                    <label> Preferred Update Method </label>
+                    <p> How would yo like us to notify you f there is an issue with your order? </p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div><input type="radio" checked name="method_check"> Mobile Number </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div><input type="radio" name="method_check"> Email </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Payment -->
+            <p id="collection_text"> Payment </p>
+            <div class="payment">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <div><input type="radio" checked name="cardname"> Card/Debit Card </div>
+                        <input type="text" placeholder="Name On Card" name="cardname" class="checkout_input02">
+                        <input type="number" placeholder="Card Number*" name="cardnumber" class="checkout_input02">
+                    </div>
+                    <div class="col-md-4 col-sm-12 groceries_inputs">
+                        <label> Totals </label>
+                        <div class="flex">
+                            <p> Sub-total </p>
+                            <p> $13.44 </p>
+                        </div>
+                        <div class="flex">
+                            <p> Plastic Bags (estimate) </p>
+                            <p> $1 </p>
+                        </div>
+                        <div class="flex">
+                            <label> Total </label>
+                            <label> $13.44 </label>
+                        </div>
+                    </div>
+                    <button type="submit" id="submit">
+                        Submit Order
+                    </button>
+                </div>
+            </div>
+        </form>
+        <!--=== right sidebar ===-->
+        <div class="wrapper_right">
+            <div class="rsb static">
+                <div class="trolley"> 
+                    <p>Trolley</p>
+                    <div>
+                        <span> Save </span> &nbsp; &nbsp;
+                        <span class="error_text"> Clear </span>
+                    </div>
+                </div>
+                <div class="trolley_items">
+                    <p> Green Pears </p>
+                    <div>
+                        <span> x3 </span> &nbsp;
+                        <span> $3.36 </span> &nbsp;
+                        <i class="fa fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="trolley_items">
+                    <p> Royal Gala Apples </p>
+                    <div>
+                        <span> x2 </span> &nbsp;
+                        <span> $2.58 </span> &nbsp;
+                        <i class="fa fa fa-caret-up"></i>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="../../Assets/image/product.png">
+                </div>
+                <div>
+                    <label> $7.00 </label>
+                    <span class="small_text"> each </span>
+                </div>
+                <p class="disabled_text small_text"> $7.00 per Kg</p>
+                <div class="flex">
+                    <div class="input-counter input-group">
+                        <div class="input-group-append">
+                            <button type="button" class="btn-add btn">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                        <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="1">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn-subtract btn">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="error_text"> Remove &nbsp; <i class="fa fa-times-circle"></i></p>
+                    </div>
+                </div>
+                <p class="small_text"> Alternatives </p>
+                <div class="between_flex">
+                    <div> Royal Gala Apples </div>                
+                    <div>
+                        x2 &nbsp; $2.58 &nbsp; <i class="fa fa-times-circle error_text"></i></p>
+                    </div>
+                </div>
+                <div class="between_flex">
+                    <div> Loved By <br> Lunchboxes Kids </div>                
+                    <div>
+                        x2 &nbsp; $4.00 &nbsp; <i class="fa fa fa-caret-down"></i></p>
+                    </div>
+                </div>
+                <div class="between_flex">
+                    <div> Pineapple Topless </div>                
+                    <div>
+                        x1 &nbsp; $3.50 &nbsp; <i class="fa fa fa-caret-down"></i></p>
+                    </div>
+                </div>
+                <div class="trolley_total_price">
+                    <div class="between_flex">
+                        <p> Savings </p>                
+                        <p> $2.50 </p>
+                    </div>
+                    <div class="between_flex">
+                        <label> Total </label>                
+                        <label> $13.44 </label>
+                    </div>
+                </div>
+                
+                <button class="checkout_btn"> Proceed To Checkout </button>
+                <div class="toggle_btn">
+                    Pick-Up  <label class="switch"> <input type="checkbox"> <span class="slider round"></span> </label> Delivery
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--======== footer =========-->
+    <footer>
+        <div class="row footer_row">
+            <div class="col-md-6 col-sm-12">
+                <img src="../../Assets/image/logo.png" class="footer_logo">
+                <img src="../../Assets/image/footer_logo_title.png" class="footer_logo_text">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> OUR STORE </p>
+                    <p> Fuel Offer </p>
+                    <p> Community Chest </p>
+                    <p> Catalog </p>
+                </div>
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> INFORMATION </p>
+                    <p> Delivery / Pick UP </p>
+                    <p> FAQ </p>
+                    <p> Return Policy </p>
+                    <p> Privacy Policy </p>
+                    <p> Terms & Conditions </p>
+                </div>
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> CONTACT </p>
+                    <p> Contact </p>
+                    <p> Employment </p>
+                    <p> Opening Hours </p>
+                    <p> Newsletter </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../Assets/js/jquery.input-counter.min.js"></script>
+    <script src="../../Assets/js/style.js"></script>
+</body>
+</html>

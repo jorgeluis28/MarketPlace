@@ -1,0 +1,361 @@
+section{    
+    /*main section*/
+    .main_content{
+
+        #collection_text{
+            margin: 10px 15px;
+            font-size: 18px;
+            border-bottom: 2px solid #e1e1e1;
+            padding: 10px 0;
+        }
+        .collection_block{
+            width: 60%;
+            .delivery_pickup{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 15px;
+            }
+            label{
+                margin: 30px 15px 10px;
+            }
+            .progress-bar {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                padding: 0;
+                margin: 0 0 1rem 0;
+                background-color: transparent;
+                width: 100%;
+                border-bottom: 2px solid $grey-color;
+                li {
+                    flex: 2;
+                    position: relative;
+                    padding: 0 0 14px 0;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    color: #777;
+                    font-weight: 600;
+                    white-space: nowrap;
+                    overflow: visible;
+                    min-width: 0;
+                    text-align: center;
+                    border-bottom: 1px solid $grey-color;
+                }
+                li:hover{
+                    cursor: pointer;
+                }
+                li:hover:before {
+                    content: "";
+                    display: block;
+                    width: 40px;
+                    height: 2px;
+                    background-color:red;
+                    border: 2px solid red;
+                    position: absolute;
+                    left: 34px;
+                    bottom: -3px;
+                    z-index: 3;
+                    transition: all .2s ease-in-out;
+                }
+                li:first-child{
+                    flex: 1;
+                    margin: 0 0 0 70px;
+                    p{
+                        left: 12px;
+                    }
+                }
+                li:first-child:before {
+                    left: 10px;
+                }
+                li:last-child {
+                    flex: 1;
+                    text-align: right;
+                    margin: 0 80px 0 0;
+                    p{
+                        left: 31px;
+                    }
+                    span {
+                        width: 200%;
+                        display: inline-block;
+                        position: absolute;
+                        left: -100%;
+                    }
+                }
+                li:last-child:before {
+                    left: 28px;
+                }
+                span {
+                    transition: opacity .3s ease-in-out;
+                }
+                p{
+                    position: absolute;
+                    top: 60px;
+                    left: 43px;
+                    font-weight: 100;
+                    font-size: $font-14;
+                }
+                li:not(.is-active) span {
+                    opacity: 0;
+                }
+                .is-active:not(:first-child):after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    position: absolute;
+                    bottom: -2px;
+                    left: -50%;
+                    z-index: 2;
+                }
+                .is-active:last-child:after {
+                    width: 200%;
+                    left: -100%;
+                }
+                .is-active:before,
+                li:hover:before,
+                .is-hovered:before {
+                    background-color: var(--color-white);
+                    border-color: $red-color;
+                }
+                li:hover:before,
+                .is-hovered:before {
+                    transform: scale(1.33);
+                }
+                li:hover span, li:hover p,
+                li.is-hovered span,
+                li.is-hovered p {
+                    color: $black-color;
+                }
+                .has-changes {
+                    opacity: 1 !important;
+                }
+                .has-changes:before {
+                    content: "";
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    left: calc(50% - 4px);
+                    bottom: -20px;
+                    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%208%208%22%3E%3Cpath%20fill%3D%22%23ed1c24%22%20d%3D%22M4%200l4%208H0z%22%2F%3E%3C%2Fsvg%3E');
+                }
+            }
+            .fa-caret-right{
+                position: absolute;
+                right: 0;
+                top: 22px;
+                font-size: 42px;
+            }
+            .fa-caret-left{
+                position: absolute;
+                left: 0;
+                top: 22px;
+                font-size: 42px;
+            }
+            .fa-caret-right:hover, .fa-caret-left:hover{
+                color: $red-color;
+                cursor: pointer;
+            }
+            .morning{
+                .morning_title{
+                    font-size: $font-18;
+                }
+                img{
+                    width: 15px;
+                    margin: 5px 0 20px;
+                }
+                div.text-center{
+                    font-size: $font-12;
+                    margin: 30px 0;
+                }
+            }
+            .preferred{
+                p{
+                    padding: 0 15px;
+                }
+            }
+            .delivery_address{
+                margin-bottom: 20px;
+                .col-md-4{
+                    display: flex;
+                }
+            }
+        }
+        .payment{
+            width: 60%;
+            .checkout_input02{
+                padding: 5px 10px;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .groceries_inputs .flex:last-child{
+                margin-top :24px;
+            }
+            #submit{
+                color: $white-color;
+                background-color: $darkgrey-color;
+                text-align: center;
+                border-radius: 30px;
+                padding: 10px 20px;
+                width: 220px;
+                border: 0;
+                margin: 20px 15px 30px 15px;
+                font-size: 16px;
+            }
+            #submit:hover{
+                background-color: $black-color;
+            }
+        }
+    }
+}
+section.shopping_result_section{
+    justify-content: space-between;
+    form{
+        width: 50%;        
+        margin: 15px;
+        .shopping_flex{
+            .shopping_result{
+                width: 34%;
+                margin-right: 2%;
+                background: $white-color;
+                .shopping_lists{
+                    padding: 30px;
+                    .shopping_list{
+                        padding: 10px 0;
+                        border-top: 1px solid #e1e1e1;
+                        margin-top: 5px;
+                        align-items: unset;
+                    }
+                    .total_price{
+                        padding: 10px 0;
+                        margin-top: 30px;
+                        border-top: 1px solid #e1e1e1;
+                    }
+                }
+                .shopping_method{
+                    padding: 30px 0 50px;
+                    background-color: #f2f1f1;
+                }
+            }
+            .shopping_thanks{
+                width: 64%;
+                background: $white-color;
+                padding: 30px;
+                img{
+                    width: 28px;
+                    height: 28px;
+                    margin-right: 5px;
+                }
+                .large_text{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    section{
+        .main_content{
+            .collection_block{
+                width: 80%;
+                .progress-bar li:first-child{
+                    margin: 0;
+                }
+                .progress-bar li:last-child{
+                    margin: 0 25px 0 0;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 1024px) {
+    section{
+        .main_content{
+            .collection_block{
+                width: 95%;
+            }
+        }
+    }
+    section.shopping_result_section{
+        form{
+            .shopping_flex{
+                display: block;
+                .shopping_result {
+                    width: 100%;
+                    margin-right: 0;
+                }
+                .shopping_thanks {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section{
+        .main_content{
+            .collection_block{
+                .morning{
+                    div.text-center:first-child{
+                        margin: 50px 0 0;
+                    }
+                    div.text-center .between_flex{
+                        justify-content: space-around;
+                    }
+                }
+                .delivery_address{
+                    .col-md-4{
+                        justify-content: center;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .payment{
+                .col-md-4{
+                    margin-top: 20px;
+                }
+            }
+        }
+        
+    }
+    section.shopping_result_section{
+        form{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section{
+        .main_content{
+            .collection_block{
+                width: 100%;
+                .delivery_pickup{
+                    display: grid;
+                }
+                .morning{
+                    div.text-center:first-child{
+                        margin: 80px 0 0;
+                    }
+                }
+                .progress-bar li:last-child {
+                    margin: 0;
+                }
+            }
+            .payment{
+                width: 100%;
+            }
+        }
+        .main_content.active{
+            margin-left: -280px;
+        }
+    }
+    section.shopping_result_section{
+        form.active{
+            margin-left: -280px;
+        }
+    }
+}

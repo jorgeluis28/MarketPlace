@@ -1,0 +1,182 @@
+section{    
+    /*main section*/
+    .main_content.order_history{
+        margin: 0 ;
+        box-shadow: unset;
+        .order_header{
+            padding: 15px 10px;
+            .col-md-12{
+                padding: 0;
+            }
+            .col-md-12.between_flex{
+                .order_card_header_icons{
+                    margin-right: 30px;
+                    i{
+                        cursor: pointer;
+                        color: $darkgrey-color;
+                        font-size: 32px;
+                    }
+                    i.active{
+                        color: $black-color;
+                    }
+                    i:hover{
+                        color: $black-color;
+                    }
+                }
+            }
+        }
+        #arrange_withcard{
+            .order_content{
+                position: relative;
+                padding: 15px 10px;
+                .order_title{
+                    font-size: 18px;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid $darkgrey-color;
+                }
+                .add_all_btn{
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-color: $black-color;
+                    color: $white-color;
+                    border: 1px solid $black-color;
+                    padding: 3px 20px;
+                }
+                .order_card{
+                    width: 200px;
+                    // padding: 30px 10px 20px;
+                    padding: 10px;
+                    border: 1px solid $black-color;
+                    margin-top: 20px;
+                    margin: 20px 20px 20px 0;
+                    display: inline-block;
+                    position: relative;
+                    .order_card_mark{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background-color: $red-color;
+                        color: $white-color;
+                        padding: 3px;
+                        text-align: center;
+                        border: none;
+                        cursor: pointer;
+                        width: 75px;
+                    }
+                    .order_img{
+                        // width: 130px;
+                        height: 100px;
+                        margin: 0 auto;
+                    }
+                    .between_flex{
+                        .deleted_price{
+                            text-decoration: line-through;
+                        }
+                    }
+                    .order_card_title{
+                        margin: 10px 0 10px;
+                    }
+                    .order_card_footer{
+                        button{
+                            background-color: $black-color;
+                            color: $white-color;
+                            padding: 3px;
+                            text-align: center;
+                            border: 1px solid $black-color;
+                            cursor: pointer;
+                        }
+                        button:hover{
+                            background-color: $white-color;
+                            color: $black-color;
+                        }
+                        button.reorder_add_btn{
+                            width: 105px;
+                        }
+                        button.order_add_btn{
+                            width: 60px;
+                        }
+                    }
+                }
+            }
+        }
+        #arrange_withtable{
+            margin-bottom: 30px;
+            padding: 10px 15px;
+            .order_table{
+                position: relative;
+                .order_title{
+                    font-size: 18px;
+                    padding-bottom: 5px;
+                    margin-top: 20px;
+                }
+                .add_all_btn{
+                    position: absolute;
+                    top: -5px;
+                    right: 0;
+                    background-color: $black-color;
+                    color: $white-color;
+                    border: 1px solid $black-color;
+                    padding: 3px 20px;
+                }
+                table{
+                    width: 100%;
+                    tr{
+                        border-bottom: 1px solid $darkgrey-color;
+                        td{
+                            padding: 10px 0 5px;
+                        }
+                        .product_price{
+                            p{
+                                margin-right: 5px;
+                                display: inline-block;
+                            }
+                            p.large_text{
+                                text-decoration: line-through;
+                            }
+                            p.save_mark{
+                                background-color: $red-color;
+                                color: $white-color;
+                                padding: 5px;
+                                text-align: center;
+                                cursor: pointer;
+                                width: 90px;                            
+                            }
+                        }
+                        .product_btns{
+                            button{
+                                background-color: $black-color;
+                                color: $white-color;
+                                padding: 3px 10px;
+                                text-align: center;
+                                border: 1px solid $black-color;
+                                cursor: pointer;
+                                margin-left: 5px;
+                                display: inline-block;
+                            }
+                            p{
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section{    
+        .main_content.order_history{
+            .order_header{
+                .between_flex{
+                    display: block!important;
+                    margin: 10px 0;
+                    .order_card_header_icons{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }    
+}

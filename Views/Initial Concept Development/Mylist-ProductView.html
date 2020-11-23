@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Mandurah Product View With Suggestion </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://www.jsdelivr.com/package/gh/FortAwesome/Font-Awesome">
+    <link rel="stylesheet" href="../../Assets/scss/style.css">
+</head>
+
+<body>
+    <!--======== header =========-->
+    <header class="container-fluid favourite_header">
+        <!-- .navbar -->
+        <div class="topnav" id="myTopnav">
+            <a href="#contact"> CONTACT </a>
+            <a href="#chest"> COMMUNITY CHEST </a>
+            <a href="#fuel"> FUEL OFFER </a>
+            <a href="#shop"> SHOP </a>
+            <a href="#home" class="active"> HOME </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <span class="logo"> <span class="logo_text"> Mandurah </span> <img src="../../Assets/image/logo.png"> </span>
+        </div>
+        <!-- search bar, toggle bar-->
+        <div class="action_bar">
+            <div class="action_bar01">
+                <i class="fa fa-th-list" id="sidebarCollapse"></i>
+                <i class="fa fa-home"> </i>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-circle"></i> <span>Hello Micheal!</span><b class="caret"></b> </a>
+                    </li>
+                </ul>
+                <div class="input-group">
+                    <input type="text" name="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="action_bar02">
+                <div class="cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    4 items
+                </div>
+                <div class="toggle_btn">
+                    $13.44  <label class="switch"> <input type="checkbox"> <span class="slider round"></span> </label>
+                </div>
+            </div>
+            <div class="action_bar02 mobile_show">
+                <div class="cart">
+                    <i class="fa fa-shopping-cart"></i> 4  &nbsp; &nbsp; $13.44 &nbsp; <i class="fa fa-eye"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search_bar mobile_show">
+            <input type="text" name="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <!--======== section =========-->
+    <section class="favourite_section">
+        <!--=== left sidebar ===-->
+        <div class="wrapper">
+            <nav id="sidebar">
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#mylists" data-toggle="collapse" aria-expanded="false"> My Lists </a>
+                        <ul class="collapse list-unstyled " id="mylists">
+                            <li>
+                                <a href="#weekshop" data-toggle="collapse" aria-expanded="false"> Weekend Shop </a>
+                                <ul class="collapse list-unstyled" id="weekshop">
+                                    <li>
+                                        <a href="#fruits" data-toggle="collapse" aria-expanded="false"> Fruit & Vegetables </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#myfavourites" data-toggle="collapse" aria-expanded="false">My Favourites</a>
+                        <ul class="collapse list-unstyled" id="myfavourites">
+                            <li><a href="#fruit"> Fruit & Vegetables </a></li>
+                            <li><a href="#apple"> Apple & Pear </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#orderhistory" data-toggle="collapse" aria-expanded="false"> Order History </a>
+                        <ul class="collapse list-unstyled" id="orderhistory">
+                            <li>
+                                <a href="#200520" data-toggle="collapse" aria-expanded="false"> 20/05/20 </a>
+                                <ul class="collapse list-unstyled" id="200520">
+                                    <li><a href="#fruit" aria-expanded="false"> Fruit & Vegetables </a></li>
+                                    <li><a href="#bakery" aria-expanded="false"> Bakery </a></li>
+                                    <li><a href="#dried" aria-expanded="false"> Dried Fruit & Nuts </a></li>
+                                    <li><a href="#milk" aria-expanded="false"> Milk, Dairy & Eggs </a></li>
+                                    <li><a href="#chees" aria-expanded="false"> Chees & Acompaniments </a></li>
+                                    <li><a href="#cereals" aria-expanded="false"> Cereals & Muesli </a></li>
+                                    <li><a href="#deli" aria-expanded="false"> Deli </a></li>                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#alldepartments" data-toggle="collapse" aria-expanded="false"> All Departments </a>
+                        <ul class="collapse list-unstyled" id="alldepartments">
+                            <li><a href="#fruit" aria-expanded="false"> Fruit & Vegetables </a></li>
+                            <li><a href="#bakery" aria-expanded="false"> Bakery </a></li>
+                            <li><a href="#dried" aria-expanded="false"> Dried Fruit & Nuts </a></li>
+                            <li><a href="#milk" aria-expanded="false"> Milk, Dairy & Eggs </a></li>
+                            <li><a href="#chees" aria-expanded="false"> Chees & Acompaniments </a></li>
+                            <li><a href="#cereals" aria-expanded="false"> Cereals & Muesli </a></li>
+                            <li><a href="#deli" aria-expanded="false"> Deli </a></li>
+                            <li><a href="#deserts" aria-expanded="false"> Chilled Meals & Deserts </a></li>
+                            <li><a href="#biscuits" aria-expanded="false"> Biscuits, Snacks & Chips </a></li>
+                            <li><a href="#frozen" aria-expanded="false"> Frozen Goods </a></li>
+                            <li><a href="#grains" aria-expanded="false"> Grains, Rice & Flours </a></li>
+                            <li><a href="#pastas" aria-expanded="false"> Pastas </a></li>
+                            <li><a href="#olis" aria-expanded="false"> Olis & Vinegars </a></li>
+                            <li><a href="#Herbs & Spices" aria-expanded="false"> herbs </a></li>
+                            <li><a href="#meat" aria-expanded="false"> Meat </a></li>
+                            <li><a href="#coffee" aria-expanded="false"> Coffee & Tea </a></li>
+                            <li><a href="#seafood" aria-expanded="false"> Seafood </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--=== main content ===-->
+        <div class="order_history main_content">
+            <div class="order_header row">
+                <div class="col-lg-4 col-md-12">
+                    <p class="large_text"> Filter <i class="fa fa-filter"></i></p>
+                </div>
+                <div class="col-lg-8 col-md-12 between_flex">
+                    <p class="large_text"> My Favourites - Fruit & Vegetables </p>
+                    <div class="between_flex">
+                        <div class="order_card_header_icons">
+                            <i class="fa fa-th active" id="arrange_card_icon"></i> &nbsp;
+                            <i class="fa fa-bars" id="arrange_table_icon"></i>
+                        </div>                        
+                        <span class="large_text"> Sort By: Name A - Z </span>
+                    </div>
+                </div>
+            </div>
+            <!-- == arrange products as card lists == -->
+            <div id="arrange_withcard">
+                <!-- Items in List -->
+                <div class="order_content">
+                    <p class="order_title"> Items in List </p>
+                    <button type="button" class="add_all_btn"> Add All To Current List </button> 
+                    <div class="order_card">
+                        <div class="text-center">
+                            <img class="order_img" src="../../Assets/image/banana.png">
+                        </div>                    
+                        <p class="order_card_title"> Cavendish Bananas </p>
+                        <div class="between_flex">
+                            <div>
+                                <p class="deleted_price disabled_text large_text"> $1 </p>
+                                <p class="small_text"> <strong class="large_text">$0.89</strong> per piece </p>
+                                <p class="small_text"> approx 180g / <span class="disabled_text"> $3.90 per Kg </span></p>
+                            </div>
+                            <i class="fa fa-warning"></i>
+                        </div>
+                        <div class="between_flex" style="margin: 10px 0">
+                            <p> Standard Qty </p>
+                            <p> 10 </p>
+                        </div>
+                        <div class="order_card_footer between_flex">
+                            <button class="button reorder_add_btn"> Add Standard </button>
+                            <button class="button order_add_btn"> Add 1 </button>
+                        </div>
+                    </div>
+                    <div class="order_card">
+                        <p class="order_card_mark"> save 50c </p>
+                        <div class="text-center">
+                            <img class="order_img" src="../../Assets/image/strawberry.png">
+                        </div>                    
+                        <p class="order_card_title"> Strawberries Punnet 250g </p>
+                        <div class="between_flex">
+                            <div>
+                                <p class="deleted_price disabled_text large_text"> $2.50 </p>
+                                <p class="small_text"> <strong class="large_text">$2.00</strong> each </p>
+                                <p class="small_text"> <span class="disabled_text"> $8.00 per Kg </span></p>
+                            </div>
+                        </div>
+                        <div class="between_flex" style="margin: 10px 0">
+                            <p> Standard Qty </p>
+                            <p> 2 </p>
+                        </div>
+                        <div class="order_card_footer between_flex">
+                            <button class="button reorder_add_btn"> Add Standard </button>
+                            <button class="button order_add_btn"> Add 1 </button>
+                        </div>
+                    </div>
+                    <div class="order_card">
+                        <p class="order_card_mark"> save 70c </p>
+                        <div class="text-center">
+                            <img class="order_img" src="../../Assets/image/avocado.png">
+                        </div>                    
+                        <p class="order_card_title"> Avocados </p>
+                        <div class="between_flex">
+                            <div>
+                                <p class="deleted_price disabled_text large_text"> $3.50 </p>
+                                <p class="small_text"> <strong class="large_text">$2.00</strong> $4.00 per Kg </p>
+                                <p class="small_text"> <span class="disabled_text"> $24.00 per Kg </span></p>
+                            </div>
+                        </div>
+                        <div class="between_flex" style="margin: 10px 0">
+                            <p> Standard Qty </p>
+                            <p> 4 </p>
+                        </div>
+                        <div class="order_card_footer between_flex">
+                            <button class="button reorder_add_btn"> Add Standard </button>
+                            <button class="button order_add_btn"> Add 1 </button>
+                        </div>
+                    </div>
+                    <div class="order_card">
+                        <p class="order_card_mark"> save 70c </p>
+                        <div class="text-center">
+                            <img class="order_img" src="../../Assets/image/blueberry.png">
+                        </div>                    
+                        <p class="order_card_title"> Blueberries Punnet 250g </p>
+                        <div class="between_flex">
+                            <div>
+                                <p class="deleted_price disabled_text large_text"> $4.50 </p>
+                                <p class="small_text"> <strong class="large_text">$3.00</strong> each </p>
+                                <p class="small_text"> <span class="disabled_text"> $24.00 per Kg </span></p>
+                            </div>
+                        </div>
+                        <div class="between_flex" style="margin: 10px 0">
+                            <p> Standard Qty </p>
+                            <p> 2 </p>
+                        </div>
+                        <div class="order_card_footer between_flex">
+                            <button class="button reorder_add_btn"> Add Standard </button>
+                            <button class="button order_add_btn"> Add 1 </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Suggested Based On Order History -->
+                <div class="order_content">
+                    <p class="order_title"> Suggested Based On Order History </p>
+                    <div class="order_card">
+                        <div class="text-center">
+                            <img class="order_img" src="../../Assets/image/pinkapple.png">
+                        </div>                    
+                        <p class="order_card_title"> Pink Lady Apples </p>
+                        <br><br>
+                        <div class="between_flex">
+                            <div>                            
+                                <p class="small_text"> <strong class="large_text">$1.38</strong> per piece </p>
+                                <p class="small_text"> approx 125g / <span class="disabled_text"> $7.50 per Kg </span></p>
+                            </div>
+                            <i class="fa fa-warning"></i>
+                        </div>
+                        <br>
+                        <div class="order_card_footer text-right">                        
+                            <button class="button order_add_btn"> Add 1 </button>
+                        </div>
+                    </div>
+                    <div class="order_card">
+                        <div class="text-center">
+                            <img class="order_img" src="../../Assets/image/lunchboxes.png">
+                        </div>                    
+                        <p class="order_card_title"> Loved By Lunchboxes Kids Bananas 500g </p>
+                        <br>
+                        <div class="between_flex">
+                            <div>                            
+                                <p class="small_text"> <strong class="large_text">$2.00</strong> piece </p>
+                                <p class="small_text"> <span class="disabled_text"> $4.00 per Kg </span></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="order_card_footer text-right">                        
+                            <button class="button order_add_btn"> Add 1 </button>
+                        </div>
+                    </div>
+                    <div class="order_card">
+                        <div class="text-center">
+                            <img class="order_img" src="../../Assets/image/lemon.png">
+                        </div>                    
+                        <p class="order_card_title"> Save Food Fight Waste Lovely Lemons 1Kg </p>
+                        <br>
+                        <div class="between_flex">
+                            <div>                            
+                                <p class="small_text"> <strong class="large_text">$6.00</strong> piece </p>
+                                <p class="small_text"> <span class="disabled_text"> $6.00 per Kg </span></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="order_card_footer text-right">                        
+                            <button class="button order_add_btn"> Add 1 </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Suggested Specials -->
+                <div class="order_content">                
+                    <p class="order_title"> Suggested Based On Order History </p>
+                    <div class="order_card">
+                        <p class="order_card_mark"> save $2.50 </p>
+                        <div class="text-center">
+                            <img class="order_img" src="../../Assets/image/pineapple.png">
+                        </div>                    
+                        <p class="order_card_title"> Pineapple Topless </p>
+                        <br><br>
+                        <div class="between_flex">
+                            <div>            
+                                <p class="deleted_price disabled_text large_text"> $6.00 </p>                
+                                <p class="small_text"> <strong class="large_text">$3.50</strong>piece </p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="order_card_footer text-right">                        
+                            <button class="button order_add_btn"> Add 1 </button>
+                        </div>
+                    </div>
+                    <div class="order_card">
+                        <p class="order_card_mark"> save $1.00 </p>
+                        <div class="text-center">
+                            <img class="order_img" src="../../Assets/image/lunchbox.png">
+                        </div>                    
+                        <p class="order_card_title"> Loved By Lunchboxes Kids Apples 750g </p>
+                        <br>
+                        <div class="between_flex">
+                            <div>
+                                <p class="deleted_price disabled_text large_text"> $5.00 </p>
+                                <p class="small_text"> <strong class="large_text">$4.00</strong> piece </p>
+                                <p class="small_text"> <span class="disabled_text"> $6.65 per Kg </span></p>
+                            </div>
+                        </div>
+                        <div class="order_card_footer text-right">                        
+                            <button class="button order_add_btn"> Add 1 </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- == arrange products as tables == -->
+            <div id="arrange_withtable">
+                <!-- Items in List table -->
+                <div class="order_table">
+                    <p class="order_title"> Items in List </p>
+                    <button type="button" class="add_all_btn"> Add All To Current List </button> 
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="30%"></th>
+                                <th width="25%"></th>
+                                <th width="20%"></th>
+                                <th width="25%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="product_name"> Cavandish Bananas </td>
+                                <td class="product_price">
+                                    <p><strong class="large_text">$0.89</strong> <span class="small_text"> per piece</span></p>
+                                </td>
+                                <td class="product_weight"> <p class="small_text">approx 180g / <span class="disabled_text"> $3.90 per Kg</span></p> </td>
+                                <td class="text-right product_btns">
+                                    <p> Standard Qty: 10 </p>
+                                    <button type="button"> Add Standard </button>
+                                    <button type="button"> Add 1 </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product_name" width="30%"> Strawberries Punnet 250g </td>
+                                <td class="product_price" width="20%">
+                                    <p class="large_text disabled_text"> $2.50 </p>
+                                    <p class="save_mark"> Save 50c </p>
+                                    <p><strong class="large_text">$2.00</strong><span class="small_text"> each </span></p>
+                                </td>
+                                <td class="product_weight" width="20%"> <p class="small_text"><span class="disabled_text"> $8.00 per Kg</span></p> </td>
+                                <td class="text-right product_btns" width="30%">
+                                    <p> Standard Qty: 2 </p>
+                                    <button type="button"> Add Standard </button>
+                                    <button type="button"> Add 1 </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product_name"> Avocados </td>
+                                <td class="product_price">
+                                    <p class="large_text disabled_text"> $3.50 </p>
+                                    <p class="save_mark"> Save 70c </p>
+                                    <p><strong class="large_text">$2.80</strong> <span class="small_text"> piece</span></p>
+                                </td>
+                                <td class="product_weight"></td>
+                                <td class="text-right product_btns">
+                                    <p> Standard Qty: 5 </p>
+                                    <button type="button"> Add Standard </button>
+                                    <button type="button"> Add 1 </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product_name"> Cavandish Bananas </td>
+                                <td class="product_price">
+                                    <p class="large_text disabled_text"> $4.50 </p>
+                                    <p class="save_mark"> Save $1.50 </p>
+                                    <p><strong class="large_text">$3.00</strong><span class="small_text"> piece</span></p>
+                                </td>
+                                <td class="product_weight"> <p class="small_text"><span class="disabled_text"> $24.00 per Kg</span></p> </td>
+                                <td class="text-right product_btns">
+                                    <p> Standard Qty: 1 </p>
+                                    <button type="button"> Add Standard </button>
+                                    <button type="button"> Add 1 </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Suggested Based On Order History -->
+                <div class="order_table">
+                    <p class="order_title"> Suggested Based On Order History </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="30%"></th>
+                                <th width="25%"></th>
+                                <th width="20%"></th>
+                                <th width="25%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="product_name"> Loved By Lunchboxes Kids Apples 750g </td>
+                                <td class="product_price">
+                                    <p class="large_text disabled_text"> $5.00 </p>
+                                    <p class="save_mark"> Save $1.00 </p>
+                                    <p><strong class="large_text">$4.00</strong><span class="small_text"> each </span></p>
+                                </td>
+                                <td class="product_weight"> <p class="small_text"><span class="disabled_text"> $6.65 per Kg</span></p> </td>
+                                <td class="text-right product_btns">
+                                    <button type="button"> Add 1 </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product_name"> Loved By Lunchboxes Kids Banana 500g </td>
+                                <td class="product_price">
+                                    <p><strong class="large_text">$2.00</strong><span class="small_text"> each</span></p>
+                                </td>
+                                <td class="product_weight"> <p class="small_text"><span class="disabled_text"> $4.00 per Kg</span></p> </td>
+                                <td class="text-right product_btns">
+                                    <button type="button"> Add 1 </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product_name"> Save Food Fight Waste Lovely Lemons 1kg</td>
+                                <td class="product_price">
+                                    <p class="large_text disabled_text"> $4.50 </p>
+                                    <p class="save_mark"> Save $1.50 </p>
+                                    <p><strong class="large_text">$6.00</strong><span class="small_text"> each</span></p>
+                                </td>
+                                <td class="product_weight"> <p class="small_text"><span class="disabled_text"> $6.00 per Kg</span></p> </td>
+                                <td class="text-right product_btns">
+                                    <button type="button"> Add 1 </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Suggested Specials -->
+                <div class="order_table">
+                    <p class="order_title"> Suggested Specials </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="30%"></th>
+                                <th width="25%"></th>
+                                <th width="20%"></th>
+                                <th width="25%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="product_name"> Pineapple Topless </td>
+                                <td class="product_price">
+                                    <p class="large_text disabled_text"> $6.00 </p>
+                                    <p class="save_mark"> Save $2.50 </p>
+                                    <p><strong class="large_text">$3.50</strong><span class="small_text"> each </span></p>
+                                </td>
+                                <td class="product_weight"></td>
+                                <td class="text-right product_btns">
+                                    <button type="button"> Add 1 </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product_name"> Save Food Fight Waste Lovely Lemons 1kg</td>
+                                <td class="product_price">
+                                    <p class="large_text disabled_text"> $4.50 </p>
+                                    <p class="save_mark"> Save $1.50 </p>
+                                    <p><strong class="large_text">$6.00</strong><span class="small_text"> each</span></p>
+                                </td>
+                                <td class="product_weight"> <p class="small_text"><span class="disabled_text"> $6.00 per Kg</span></p> </td>
+                                <td class="text-right product_btns">
+                                    <button type="button"> Add 1 </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!--=== right sidebar ===-->
+        <div class="wrapper_right">
+            <div class="rsb static">
+                <div class="trolley_items">
+                    <p> Green Pears </p>
+                    <div>
+                        <span> x3 </span> &nbsp;
+                        <span> $3.36 </span> &nbsp;
+                        <i class="fa fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="trolley_items">
+                    <p> Royal Gala Apples </p>
+                    <div>
+                        <span> x2 </span> &nbsp;
+                        <span> $2.58 </span> &nbsp;
+                        <i class="fa fa fa-caret-up"></i>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="../../Assets/image/product.png">
+                </div>
+                <div>
+                    <label> $7.00 </label>
+                    <span class="small_text"> each </span>
+                </div>
+                <p class="disabled_text small_text"> $7.00 per Kg</p>
+                <div class="flex">
+                    <div class="input-counter input-group">
+                        <div class="input-group-append">
+                            <button type="button" class="btn-add btn">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                        <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="1">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn-subtract btn">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" class="remove_button">
+                        <span id="remove_text"> Remove </span>
+                        <span id="remove_minus">-</span>
+                    </button>
+                </div>
+                <div class="between_flex">
+                    <div> Loved By <br> Lunchboxes Kids </div>                
+                    <div>
+                        x2 &nbsp; $4.00 &nbsp; <i class="fa fa fa-caret-down"></i></p>
+                    </div>
+                </div>
+                <div class="between_flex">
+                    <div> Pineapple Topless </div>                
+                    <div>
+                        x1 &nbsp; $3.50 &nbsp; <i class="fa fa fa-caret-down"></i></p>
+                    </div>
+                </div>
+                <div class="trolley_total_price">
+                    <div class="between_flex">
+                        <p> Savings </p>                
+                        <p> $2.50 </p>
+                    </div>
+                    <div class="between_flex">
+                        <label> Total </label>                
+                        <label> $13.44 </label>
+                    </div>
+                </div>
+                <div class="coupon_btns">
+                    <button type="button"> Apply Coupon </button>
+                    <button type="button"> Proceed To Checkout </button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--======== footer =========-->
+    <footer>
+        <div class="row footer_row">
+            <div class="col-md-6 col-sm-12">
+                <img src="../../Assets/image/footer_logo01.png" class="footer_logo">
+                <img src="../../Assets/image/footer_logo_title01.png" class="footer_logo_text">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> OUR STORE </p>
+                    <p> Fuel Offer </p>
+                    <p> Community Chest </p>
+                    <p> Catalog </p>
+                </div>
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> INFORMATION </p>
+                    <p> Delivery / Pick UP </p>
+                    <p> FAQ </p>
+                    <p> Return Policy </p>
+                    <p> Privacy Policy </p>
+                    <p> Terms & Conditions </p>
+                </div>
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> CONTACT </p>
+                    <p> Contact </p>
+                    <p> Employment </p>
+                    <p> Opening Hours </p>
+                    <p> Newsletter </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../Assets/js/jquery.input-counter.min.js"></script>
+    <script src="../../Assets/js/style.js"></script>
+</body>
+</html>

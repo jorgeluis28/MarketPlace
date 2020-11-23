@@ -1,0 +1,133 @@
+section{    
+    /*main section*/
+    .main_content{        
+        #content_sidebar {
+            .col-md-5{
+                .addnew_btn{
+                    color: $white-color;
+                    background-color: $black-color;
+                    text-align: center;
+                    border-radius: 30px;
+                    padding: 10px 20px;
+                    width: 165px;
+                    border: 0;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                }
+                .addnew_btn:focus{
+                    outline: none;
+                }
+            }
+            .col-md-7{
+                .account_content{
+                    .fa-pencil:hover{
+                        cursor: pointer;
+                    }
+                    .mylist_table{
+                        margin-top: 10px;
+                        width: 100%;
+                        min-width: 500px;
+                        thead{
+                            margin: 10px  0;
+                            tr{
+                                th{
+                                    padding: 10px 0;
+                                    font-size: 12px;
+                                }
+                                th:last-child{
+                                    text-align: right;
+                                }
+                            }
+                        }
+                        tbody{
+                            tr{
+                                border-bottom: 1px solid $darkgrey-color;
+                                td{
+                                    padding: 5px 0;
+                                    .input-group.input-counter{
+                                        width: 60px; 
+                                        .counter{
+                                            text-align: center;
+                                            background-color: transparent;
+                                            border: none;
+                                            box-shadow: unset;
+                                        }
+                                        .input-group-prepend{
+                                            display: flex;
+                                            button{
+                                                position: absolute;
+                                                left: 0;
+                                                width: 15px;
+                                                top: 10px;
+                                                border-radius: 50%;
+                                                height: 15px;
+                                                z-index: 5;
+                                                background-color: transparent;
+                                                border: 1px solid $black-color;
+                                                i{
+                                                    position: absolute;
+                                                    top: 2px;
+                                                    right: 2px;
+                                                    color: $black-color;
+                                                    font-size: 11px;
+                                                }
+                                            }
+                                            button:focus{
+                                                outline: none;
+                                            }
+                                        }
+                                        .input-group-append{
+                                            display: flex;
+                                            margin-left: -1px;
+                                            button{
+                                                position: absolute;
+                                                right: 0px;
+                                                width: 15px;
+                                                top: 10px;
+                                                border-radius: 50%;
+                                                height: 15px;
+                                                z-index: 5;
+                                                background-color: transparent;
+                                                color: $white-color;
+                                                border: 1px solid $black-color;
+                                                i{
+                                                    position: absolute;
+                                                    top: 1px;
+                                                    right: 2px;
+                                                    color: $black-color;
+                                                    font-size: 11px;
+                                                }
+                                            }
+                                            button:focus{
+                                                outline: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                td:last-child{
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section{
+        .main_content{
+            #content_sidebar{
+                .col-md-7{
+                    height: unset;
+                }
+                .col-md-5{
+                    height: unset;
+                }
+            } 
+        }
+    }
+}

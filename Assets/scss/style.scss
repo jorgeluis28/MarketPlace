@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+//... Base
+@import
+  'base/font',
+  'base/color',
+  'base/general',
+  'base/modal';
+
+//... Layout
+@import
+   'layout/header',
+   'layout/footer',
+   'layout/sidebar',
+   'layout/trolley';
+
+//... All Component pages
+@import
+  'component/checkout',  //... checkout page
+  'component/setting',  //... Account management pages
+  'component/managelist',   //... List Management pages
+  'component/favourites',  //... My favourite pages
+  'component/productview'; //... Order History pages

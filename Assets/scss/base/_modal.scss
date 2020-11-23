@@ -1,0 +1,172 @@
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 480px;
+        margin: 17% auto;
+    }
+}
+
+
+.modal{
+    .modal-header{
+        background: $black-color;
+        color: $white-color;
+        padding: 10px 20px;
+    }
+    .modal-body{
+        padding: 20px;
+        p{
+            font-size: 16px;
+        }
+        input[type="text"]{
+            margin: 10px 0;
+            padding: 5px;
+            width: 100%;
+        }
+    }
+    .modal-footer{
+        padding: 10px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 0;
+        .cancel_btn{
+            background: $red-color;
+            color: $white-color;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            width: 130px;
+            padding: 8px 16px;
+            display: flex;
+            justify-content: space-between;
+            span{
+                font-size: 28px;
+                line-height: 0.6;
+            }
+        }
+        .save_btn{
+            background: $black-color;
+            color: $white-color;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            width: 280px;
+            padding: 8px 16px;
+            display: flex;
+            justify-content: space-between;
+            span{
+                font-size: 28px;
+                line-height: 0.6;
+            }
+        }
+    }
+}
+
+.deletelistModal.modal{
+    .modal-body{
+        .between_flex{
+            justify-content: unset;
+            i{
+                color: $red-color;
+                font-size: 40px;
+            }
+            div{
+                margin-left: 15px;
+            }
+        }   
+    }
+    .modal-footer{
+        .delete_cancel_btn{
+            background: transparent;
+            color: $red-color;
+            font-size: 16px;
+            border: 1px solid $red-color;
+            border-radius: 20px;
+            width: 250px;
+            padding: 8px 16px;
+            display: flex;
+            justify-content: space-between;
+            span{
+                font-size: 28px;
+                line-height: 0.6;
+            }
+            @media screen and (max-width: 576px) {
+                .delete_cancel_btn{
+                    width: 250px;
+                }
+                
+            }
+        }
+        .delete_btn{
+            background: $red-color;
+            color: $white-color;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            width: 190px;
+            padding: 8px 16px;
+            display: flex;
+            justify-content: space-between;
+            span{
+                font-size: 28px;
+                line-height: 0.6;
+            }
+        }
+    }
+}
+
+#proceedModal.modal{
+    .modal-content{
+        .list-step1{
+            .modal-body{
+                input[name="next_time"]{
+                    margin: 10px 0 0;
+                }
+            }
+            .modal-footer{
+                .back_trolley_btn{
+                    background: $red-color;
+                    color: $white-color;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 20px;
+                    width: 90px;
+                    padding: 8px 16px;
+                    display: flex;
+                    justify-content: space-between;
+                    span{
+                        font-size: 28px;
+                        line-height: 0.6;
+                    }
+                }
+                .save_trolley_btn{
+                    background: transparent;
+                    color: $black-color;
+                    font-size: 16px;
+                    border: 1px solid $black-color;
+                    border-radius: 20px;
+                    width: 100px;
+                    padding: 8px 16px;
+                    text-align: center;                    
+                }
+                .process_btn{
+                    background: $black-color;
+                    color: $white-color;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 20px;
+                    width: 205px;
+                    padding: 8px 16px;
+                    display: flex;
+                    justify-content: space-between;
+                    span{
+                        font-size: 28px;
+                        line-height: 0.6;
+                    }
+                }
+            }
+        }
+        .list-step2{
+            // display: none;
+        }
+    }
+}

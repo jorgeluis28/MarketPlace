@@ -1,0 +1,99 @@
+section{
+    display: flex;
+    background-color: $grey-color;
+    /*left side bar*/
+    .wrapper{
+        display: flex;
+        align-items: stretch;
+        #sidebar {
+            min-width: 300px;
+            max-width: 300px;
+            background: $white-color;
+            color: $black-color;
+            transition: all 0.3s;
+            ul.components {
+                padding: 0;
+            }
+            ul{
+                li{
+                    a{
+                        padding: 10px 20px;
+                        font-size: 18px;
+                        display: block;
+                        color: $black-color;
+                        border-bottom: 1px solid $darkgrey-color;
+                        position: relative;
+                    }
+                }
+                li.active > a {
+                    border-bottom: 1px solid $darkgrey-color;    
+                }
+                li.square_black_btn{
+                    background-color: $black-color;
+                    color: $white-color;
+                    padding: 5px;
+                    text-align: center;
+                    border: 1px solid $black-color;
+                    margin: 30px 15px;
+                    cursor: pointer;
+                }
+                li.square_black_btn:hover{
+                    background-color: $white-color;
+                    color: $black-color;
+                }
+                ul{
+                    a {
+                        margin: 0 15px;
+                        color: $black-color;
+                    }
+                    a:hover {
+                        background-color: $black-color;
+                        color: $white-color;
+                    }
+                    // li{
+                    //     ul{
+                    //         padding: 0px 0 10px 10px!important;
+                    //     }
+                    // }
+                }
+                a[aria-expanded="true"] {
+                    color: $darkgrey-color;
+                    border-bottom: 1px solid $darkgrey-color;
+                    padding: 10px 0 10px 40px!important;
+                }
+                
+                a[data-toggle="collapse"] {
+                    position: relative;
+                }
+                
+                a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+                    content: '\203A';
+                    display: block;
+                    position: absolute;
+                    right: 20px;
+                    font-size: 2em;
+                    top: -7px;
+                }
+                
+                a[aria-expanded="true"]::before {
+                    content: '\2039';
+                    left: 20px;
+                    right: unset;
+                }
+            }
+        }
+        #sidebar.active {
+            margin-left: -300px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    section{
+        #sidebar {
+            margin-left: -300px;
+        }
+        #sidebar.active {
+            margin-left: 0!important;
+        }
+    }
+}

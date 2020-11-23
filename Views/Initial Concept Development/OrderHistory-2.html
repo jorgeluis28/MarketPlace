@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Mandurah Order History Drill Down 2 </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://www.jsdelivr.com/package/gh/FortAwesome/Font-Awesome">
+    <link rel="stylesheet" href="../../Assets/scss/style.css">
+</head>
+
+<body>
+    <!--======== header =========-->
+    <header class="container-fluid favourite_header">
+        <!-- .navbar -->
+        <div class="topnav" id="myTopnav">
+            <a href="#contact"> CONTACT </a>
+            <a href="#chest"> COMMUNITY CHEST </a>
+            <a href="#fuel"> FUEL OFFER </a>
+            <a href="#shop"> SHOP </a>
+            <a href="#home" class="active"> HOME </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <span class="logo"> <span class="logo_text"> Mandurah </span> <img src="../../Assets/image/logo.png"> </span>
+        </div>
+        <!-- search bar, toggle bar-->
+        <div class="action_bar">
+            <div class="action_bar01">
+                <i class="fa fa-th-list" id="sidebarCollapse"></i>
+                <i class="fa fa-home"> </i>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-circle"></i> <span>Hello Micheal!</span><b class="caret"></b> </a>
+                    </li>
+                </ul>
+                <div class="input-group">
+                    <input type="text" name="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="action_bar02">
+                <div class="cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    4 items
+                </div>
+                <div class="toggle_btn">
+                    $13.44  <label class="switch"> <input type="checkbox"> <span class="slider round"></span> </label>
+                </div>
+            </div>
+            <div class="action_bar02 mobile_show">
+                <div class="cart">
+                    <i class="fa fa-shopping-cart"></i> 4  &nbsp; &nbsp; $13.44 &nbsp; <i class="fa fa-eye"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search_bar mobile_show">
+            <input type="text" name="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <!--======== section =========-->
+    <section class="favourite_section">
+        <!--=== left sidebar ===-->
+        <div class="wrapper">
+            <nav id="sidebar">
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#orderhistory" data-toggle="collapse" aria-expanded="true"> Order History </a>
+                        <ul class="collapse list-unstyled collapse in" id="orderhistory">
+                            <li>
+                                <a href="#200520" data-toggle="collapse" aria-expanded="true"> 20/05/20 </a>
+                                <ul class="collapse list-unstyled collapse in" id="200520">
+                                    <li><a href="./OrderHistory-ProductView.html" aria-expanded="false"> Fruit & Vegetables </a></li>
+                                    <li><a href="#bakery" aria-expanded="false"> Bakery </a></li>
+                                    <li><a href="#milk" aria-expanded="false"> Milk, Dairy & Eggs </a></li>
+                                    <li><a href="#cereals" aria-expanded="false"> Cereals & Muesli </a></li>
+                                    <li><a href="#deli" aria-expanded="false"> Deli </a></li>
+                                </ul>
+                            </li>
+                            <li class="square_black_btn"> Order Again </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#mylists" data-toggle="collapse" aria-expanded="false"> My Lists </a>
+                        <ul class="collapse list-unstyled" id="mylists">
+                            <li>
+                                <a href="#midweekendshop" data-toggle="collapse" aria-expanded="false"> Mid - Week Shop </a>
+                                <ul class="collapse list-unstyled" id="midweekendshop">
+                                    <li><a href="#"> Mid - Weekend Shop 01 </a></li>
+                                    <li><a href="#"> Mid - Weekend Shop 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#weekshop" data-toggle="collapse" aria-expanded="false"> Weekend Shop </a>
+                                <ul class="collapse list-unstyled" id="weekshop">
+                                    <li><a href="#"> Weekend Shop 01 </a></li>
+                                    <li><a href="#"> Weekend Shop 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#meatballs" data-toggle="collapse" aria-expanded="false"> Meatballs Ingredients </a>
+                                <ul class="collapse list-unstyled" id="meatballs">
+                                    <li><a href="#"> Meatballs 01 </a></li>
+                                    <li><a href="#"> Meatballs 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#saved1" data-toggle="collapse" aria-expanded="false"> Saved List 1 </a>
+                                <ul class="collapse list-unstyled" id="saved1">
+                                    <li><a href="#"> Save 01 </a></li>
+                                    <li><a href="#"> Save 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#saved2" data-toggle="collapse" aria-expanded="false"> Saved List 2 </a>
+                                <ul class="collapse list-unstyled" id="saved2">
+                                    <li><a href="#"> Save 03 </a></li>
+                                    <li><a href="#"> Save 04 </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#myfavourites" data-toggle="collapse" aria-expanded="false">My Favourites</a>
+                        <ul class="collapse list-unstyled" id="myfavourites">
+                            <li><a href="#fruit"> Fruit & Vegetables </a></li>
+                            <li><a href="#apple"> Apple & Pear </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#alldepartments" data-toggle="collapse" aria-expanded="false"> All Departments </a>
+                        <ul class="collapse list-unstyled" id="alldepartments">
+                            <li><a href="#fruit" aria-expanded="false"> Fruit & Vegetables </a></li>
+                            <li><a href="#bakery" aria-expanded="false"> Bakery </a></li>
+                            <li><a href="#dried" aria-expanded="false"> Dried Fruit & Nuts </a></li>
+                            <li><a href="#milk" aria-expanded="false"> Milk, Dairy & Eggs </a></li>
+                            <li><a href="#chees" aria-expanded="false"> Chees & Acompaniments </a></li>
+                            <li><a href="#cereals" aria-expanded="false"> Cereals & Muesli </a></li>
+                            <li><a href="#deli" aria-expanded="false"> Deli </a></li>
+                            <li><a href="#deserts" aria-expanded="false"> Chilled Meals & Deserts </a></li>
+                            <li><a href="#biscuits" aria-expanded="false"> Biscuits, Snacks & Chips </a></li>
+                            <li><a href="#frozen" aria-expanded="false"> Frozen Goods </a></li>
+                            <li><a href="#grains" aria-expanded="false"> Grains, Rice & Flours </a></li>
+                            <li><a href="#pastas" aria-expanded="false"> Pastas </a></li>
+                            <li><a href="#olis" aria-expanded="false"> Olis & Vinegars </a></li>
+                            <li><a href="#Herbs & Spices" aria-expanded="false"> herbs </a></li>
+                            <li><a href="#meat" aria-expanded="false"> Meat </a></li>
+                            <li><a href="#coffee" aria-expanded="false"> Coffee & Tea </a></li>
+                            <li><a href="#seafood" aria-expanded="false"> Seafood </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--=== main content ===-->
+        <div id="favouriteCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#favouriteCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#favouriteCarousel" data-slide-to="1"></li>
+                <li data-target="#favouriteCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="../../Assets/image/carousel01.png" alt="Los Angeles" style="width:100%;">
+                </div>
+            
+                <div class="item">
+                    <img src="../../Assets/image/carousel01.png" alt="Chicago" style="width:100%;">
+                </div>
+                
+                <div class="item">
+                    <img src="../../Assets/image/carousel01.png" alt="New york" style="width:100%;">
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#favouriteCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#favouriteCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        
+            <!-- My favourite lists -->
+            <div class="favourite_items">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <img src="../../Assets/image/img02.png">
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <img src="../../Assets/image/img03.png">
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <img src="../../Assets/image/img04.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <img src="../../Assets/image/img05.png">
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <img src="../../Assets/image/img06.png">
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <img src="../../Assets/image/img07.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--=== right sidebar ===-->
+        <div class="wrapper_right">
+            <div class="rsb static">
+                <div class="trolley_items">
+                    <p> Green Pears </p>
+                    <div>
+                        <span> x3 </span> &nbsp;
+                        <span> $3.36 </span> &nbsp;
+                        <i class="fa fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="trolley_items">
+                    <p> Royal Gala Apples </p>
+                    <div>
+                        <span> x2 </span> &nbsp;
+                        <span> $2.58 </span> &nbsp;
+                        <i class="fa fa fa-caret-up"></i>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="../../Assets/image/product.png">
+                </div>
+                <div>
+                    <label> $7.00 </label>
+                    <span class="small_text"> each </span>
+                </div>
+                <p class="disabled_text small_text"> $7.00 per Kg</p>
+                <div class="flex">
+                    <div class="input-counter input-group">
+                        <div class="input-group-append">
+                            <button type="button" class="btn-add btn">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                        <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="1">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn-subtract btn">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" class="remove_button square_radius">
+                        <span id="remove_text"> Remove </span>
+                        <span id="remove_minus">-</span>
+                    </button>
+                </div>
+                <div class="between_flex">
+                    <div> Loved By <br> Lunchboxes Kids </div>                
+                    <div>
+                        x2 &nbsp; $4.00 &nbsp; <i class="fa fa fa-caret-down"></i></p>
+                    </div>
+                </div>
+                <div class="between_flex">
+                    <div> Pineapple Topless </div>                
+                    <div>
+                        x1 &nbsp; $3.50 &nbsp; <i class="fa fa fa-caret-down"></i></p>
+                    </div>
+                </div>
+                <div class="trolley_total_price">
+                    <div class="between_flex">
+                        <p> Savings </p>                
+                        <p> $2.50 </p>
+                    </div>
+                    <div class="between_flex">
+                        <label> Total </label>                
+                        <label> $13.44 </label>
+                    </div>
+                </div>
+                <div class="coupon_btns">
+                    <button type="button" class="square_radius"> Apply Coupon </button>
+                    <button type="button" class="square_radius"> Proceed To Checkout </button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--======== footer =========-->
+    <footer>
+        <div class="row footer_row">
+            <div class="col-md-6 col-sm-12">
+                <img src="../../Assets/image/footer_logo01.png" class="footer_logo">
+                <img src="../../Assets/image/footer_logo_title01.png" class="footer_logo_text">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> OUR STORE </p>
+                    <p> Fuel Offer </p>
+                    <p> Community Chest </p>
+                    <p> Catalog </p>
+                </div>
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> INFORMATION </p>
+                    <p> Delivery / Pick UP </p>
+                    <p> FAQ </p>
+                    <p> Return Policy </p>
+                    <p> Privacy Policy </p>
+                    <p> Terms & Conditions </p>
+                </div>
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> CONTACT </p>
+                    <p> Contact </p>
+                    <p> Employment </p>
+                    <p> Opening Hours </p>
+                    <p> Newsletter </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../Assets/js/jquery.input-counter.min.js"></script>
+    <script src="../../Assets/js/style.js"></script>
+</body>
+</html>

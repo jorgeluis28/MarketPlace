@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Mandurah Manage Lists </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://www.jsdelivr.com/package/gh/FortAwesome/Font-Awesome">
+    <link rel="stylesheet" href="../../Assets/scss/style.css">
+</head>
+
+<body>
+    <!--======== header =========-->
+    <header class="container-fluid">
+        <!-- .navbar -->
+        <div class="topnav" id="myTopnav">
+            <a href="#contact"> CONTACT </a>
+            <a href="#chest"> COMMUNITY CHEST </a>
+            <a href="#fuel"> FUEL OFFER </a>
+            <a href="#shop"> SHOP </a>
+            <a href="#home" class="active"> HOME </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <span class="logo"> <span class="logo_text"> Mandurah </span> <img src="../../Assets/image/logo.png"> </span>
+        </div>
+        <!-- search bar, toggle bar-->
+        <div class="action_bar">
+            <div class="action_bar01">
+                <i class="fa fa-th-list" id="sidebarCollapse"></i>
+                <i class="fa fa-home"> </i>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-circle"></i> <span>Hello Micheal!</span><b class="caret"></b> </a>
+                    </li>
+                </ul>
+                <div class="input-group">
+                    <input type="text" name="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="action_bar02">
+                <div class="cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    4 items
+                </div>
+                <div class="toggle_btn">
+                    $13.44  <label class="switch"> <input type="checkbox"> <span class="slider round"></span> </label>
+                </div>
+            </div>
+            <div class="action_bar02 mobile_show">
+                <div class="cart">
+                    <i class="fa fa-shopping-cart"></i> 4  &nbsp; &nbsp; $13.44 &nbsp; <i class="fa fa-eye"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search_bar mobile_show">
+            <input type="text" name="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <!--======== section =========-->
+    <section>
+        <!--=== left sidebar ===-->
+        <div class="wrapper">
+            <nav id="sidebar">
+                <ul class="list-unstyled components">                
+                    <li>
+                        <a href="#mylists" data-toggle="collapse" aria-expanded="false"> My Lists </a>
+                        <ul class="collapse list-unstyled" id="mylists">
+                            <li>
+                                <a href="#weekendshop" data-toggle="collapse" aria-expanded="false"> Weekend Shop </a>
+                                <ul class="collapse list-unstyled" id="weekendshop">
+                                    <li><a href="#"> Weekend Shop 01 </a></li>
+                                    <li><a href="#"> Weekend Shop 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#midweekshop" data-toggle="collapse" aria-expanded="false"> Midweek Shop </a>
+                                <ul class="collapse list-unstyled" id="midweekshop">
+                                    <li><a href="#"> Midweek Shop 01 </a></li>
+                                    <li><a href="#"> Midweek Shop 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#bolognaise" data-toggle="collapse" aria-expanded="false"> Bolognaise Ingredients </a>
+                                <ul class="collapse list-unstyled" id="bolognaise">
+                                    <li><a href="#"> Bolognaise 01 </a></li>
+                                    <li><a href="#"> Bolognaise 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#snacks" data-toggle="collapse" aria-expanded="false"> Snacks </a>
+                                <ul class="collapse list-unstyled" id="snacks">
+                                    <li><a href="#"> Snacks 01 </a></li>
+                                    <li><a href="#"> Snacks 02 </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"> Manage Lists </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#myfavourites" data-toggle="collapse" aria-expanded="false">My Favourites</a>
+                        <ul class="collapse list-unstyled" id="myfavourites">
+                            <li><a href="#football"> Football </a></li>
+                            <li><a href="#basketball"> Basketball </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#orderhistory" data-toggle="collapse" aria-expanded="false"> Order History </a>
+                        <ul class="collapse list-unstyled" id="orderhistory">
+                            <li><a href="#deliveryfood"> Delivery Food </a></li>
+                            <li><a href="#meeting"> Metting </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#specials" data-toggle="collapse" aria-expanded="false"> Specials </a>
+                        <ul class="collapse list-unstyled" id="specials">
+                            <li><a href="#miracle"> Miracle </a></li>
+                            <li><a href="#magic"> Magic </a></li>
+                            <li><a href="#star"> Star </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#alldepartments" data-toggle="collapse" aria-expanded="false"> All Departments </a>
+                        <ul class="collapse list-unstyled" id="alldepartments">
+                            <li><a href="#department1"> Department1 </a></li>
+                            <li><a href="#department2"> Department2 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--=== main content ===-->
+        <form method="post" action="" class="main_content">
+            <!-- My Lists - Manage -->
+            <div id="content_title" class="between_flex">
+                <a href="#" class="account_links" onclick="openContent(event, 'mylist')">My Lists - Manage</a>
+                <p class="sortby"> Sort By: Price High-Low </p>
+            </div>
+            
+            <div class="row"  id="content_sidebar">
+                <div class="col-md-5 col-sm-12">
+                    <ul class="list-unstyled components">
+                        <li><a href="#" class="account_links" aria-expanded="false" onclick="openContent(event, 'weekend_shop')"> Weekend Shop </a></li>
+                        <li><a href="#" class="account_links" aria-expanded="false" onclick="openContent(event, 'midweek_shop')"> Midweek Shop </a></li>
+                        <li><a href="#" class="account_links" aria-expanded="false" onclick="openContent(event, 'bolognaise_ingredients')"> Bolognaise Ingredients </a></li>
+                        <li><a href="#" class="account_links" aria-expanded="false" onclick="openContent(event, 'snack')"> Snacks </a></li>
+                    </ul>
+                    <button class="addnew_btn" type="button" data-toggle="modal" data-target="#newlistModal"> Add New List </button>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <!-- My Lists Manage -->
+                    <div class="text-center select_section disabled_text account_content" id="mylist">
+                        <p class="large_text">Select List To Edit</p>
+                    </div>
+                    <!-- Weekend Shop -->
+                    <div class="account_content" id="weekend_shop">
+                        <div class="between_flex"> 
+                            <div class="large_text" style="padding: 0"> Weekend Shop &nbsp; <i class="fa fa fa-pencil medium_text" data-toggle="modal" data-target="#editModal"></i></div>
+                            <p class="medium_text error_text"> Delete List <i class="fa fa-times" data-toggle="modal" data-target=".deletelistModal"></i></p>
+                        </div>
+                        <table class="mylist_table">
+                            <thead>
+                                <tr>
+                                    <th width="30%"> Item </th>
+                                    <th width="20%"> Brand </th>
+                                    <th width="15%"> Size </th>
+                                    <th width="10%"> Price </th>
+                                    <th width="10%"> Quantity </th>
+                                    <th width="15%"> Sub Total </th>
+                                </tr>                                
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> Weet-Bix Breakfast Cereal </td>
+                                    <td> Sanitarium </td>
+                                    <td> 800g </td>
+                                    <td> $4.00 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="1">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $4.00 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td> Full Cream Milk </td>
+                                    <td> St Davids </td>
+                                    <td> 1L </td>
+                                    <td> $3.59 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="1">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $3.59 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td> Bananas </td>
+                                    <td> Chiquita </td>
+                                    <td> 180g <span>($3.50/Kg)</span> </td>
+                                    <td> $0.63 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="8">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $5.04 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td> Royal Gala Apples </td>
+                                    <td>  </td>
+                                    <td> 160g <span>($5.50/Kg)</span></td>
+                                    <td> $0.88 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="10">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $8.80 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td> Passionfruit Coconut Yogurt </td>
+                                    <td> Cocobella </td>
+                                    <td> 150g </td>
+                                    <td> $3.50 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="1">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $3.50 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td> Tasty Cheese Block </td>
+                                    <td> Bega </td>
+                                    <td> 250g </td>
+                                    <td> $6.00 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="1">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $6.00 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td> Frozen Quick Chips 2 pack </td>
+                                    <td> McCain </td>
+                                    <td> 200g </td>
+                                    <td> $2.50 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="2">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $5.00 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="checkout_btn" type="button" data-toggle="modal" data-target=".newitemModal"> Add New Items To List </button>
+                    </div>
+                    <!-- Midweek Shop  -->
+                    <div class="account_content" id="midweek_shop">
+                        <div class="between_flex"> 
+                            <div class="large_text" style="padding: 0"> Midweek Shop &nbsp; <i class="fa fa fa-pencil medium_text" data-toggle="modal" data-target="#editModal"></i></div>
+                            <p class="medium_text error_text"> Delete List <i class="fa fa-times" data-toggle="modal" data-target=".deletelistModal"></i></p>
+                        </div>
+                        <table class="mylist_table">
+                            <thead>
+                                <tr>
+                                    <th width="30%"> Item </th>
+                                    <th width="20%"> Brand </th>
+                                    <th width="15%"> Size </th>
+                                    <th width="10%"> Price </th>
+                                    <th width="10%"> Quantity </th>
+                                    <th width="15%"> Sub Total </th>
+                                </tr>                                
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> Weet-Bix Breakfast Cereal </td>
+                                    <td> Sanitarium </td>
+                                    <td> 800g </td>
+                                    <td> $4.00 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="1">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $4.00 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td> Full Cream Milk </td>
+                                    <td> St Davids </td>
+                                    <td> 1L </td>
+                                    <td> $3.59 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="1">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $3.59 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td> Bananas </td>
+                                    <td> Chiquita </td>
+                                    <td> 180g <span>($3.50/Kg)</span> </td>
+                                    <td> $0.63 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="8">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $5.04 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td> Royal Gala Apples </td>
+                                    <td>  </td>
+                                    <td> 160g <span>($5.50/Kg)</span></td>
+                                    <td> $0.88 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="10">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $8.80 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td> Passionfruit Coconut Yogurt </td>
+                                    <td> Cocobella </td>
+                                    <td> 150g </td>
+                                    <td> $3.50 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="1">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $3.50 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td> Tasty Cheese Block </td>
+                                    <td> Bega </td>
+                                    <td> 250g </td>
+                                    <td> $6.00 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="1">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $6.00 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td> Frozen Quick Chips 2 pack </td>
+                                    <td> McCain </td>
+                                    <td> 200g </td>
+                                    <td> $2.50 </td>
+                                    <td> 
+                                        <div class="input-counter input-group">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn-add">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="2">
+                                            <div class="input-group-prepend">
+                                                <button type="button"  class="btn-subtract ">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> $5.00 &nbsp; <i class="fa fa-times remove_list error_text" data-toggle="modal" data-target=".deletelistModal"></i> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="checkout_btn" type="button" data-toggle="modal" data-target=".newitemModal"> Add New Items To List </button>
+                    </div>
+                    <div class="text-center select_section disabled_text account_content" id="bolognaise_ingredients">
+                        <p class="large_text">Select List To Edit</p>
+                    </div>
+                    <div class="text-center select_section disabled_text account_content" id="snack">
+                        <p class="large_text">Select List To Edit</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+        </form>
+        <!--=== right sidebar ===-->
+        <div class="wrapper_right">
+            <div class="rsb static">
+                <div class="trolley"> 
+                    <p>Trolley</p>
+                    <div>
+                        <span> Save </span> &nbsp; &nbsp;
+                        <span class="error_text"> Clear </span>
+                    </div>
+                </div>
+                <div class="trolley_items">
+                    <p> Green Pears </p>
+                    <div>
+                        <span> x3 </span> &nbsp;
+                        <span> $3.36 </span> &nbsp;
+                        <i class="fa fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="trolley_items">
+                    <p> Royal Gala Apples </p>
+                    <div>
+                        <span> x2 </span> &nbsp;
+                        <span> $2.58 </span> &nbsp;
+                        <i class="fa fa fa-caret-up"></i>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="../../Assets/image/product.png">
+                </div>
+                <div>
+                    <label> $7.00 </label>
+                    <span class="small_text"> each </span>
+                </div>
+                <p class="disabled_text small_text"> $7.00 per Kg</p>
+                <div class="flex">
+                    <div class="input-counter input-group">
+                        <div class="input-group-append">
+                            <button type="button" class="btn-add">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                        <input type="text" class="form-control counter" data-min="1" data-max="100" data-default="1">
+                        <div class="input-group-prepend">
+                            <button type="button"  class="btn-subtract ">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="error_text"> Remove &nbsp; <i class="fa fa-times-circle"></i></p>
+                    </div>
+                </div>
+                <p class="small_text"> Alternatives </p>
+                <div class="between_flex">
+                    <div> Royal Gala Apples </div>                
+                    <div>
+                        x2 &nbsp; $2.58 &nbsp; <i class="fa fa-times-circle error_text"></i></p>
+                    </div>
+                </div>
+                <div class="between_flex">
+                    <div> Loved By <br> Lunchboxes Kids </div>                
+                    <div>
+                        x2 &nbsp; $4.00 &nbsp; <i class="fa fa fa-caret-down"></i></p>
+                    </div>
+                </div>
+                <div class="between_flex">
+                    <div> Pineapple Topless </div>                
+                    <div>
+                        x1 &nbsp; $3.50 &nbsp; <i class="fa fa fa-caret-down"></i></p>
+                    </div>
+                </div>
+                <div class="trolley_total_price">
+                    <div class="between_flex">
+                        <p> Savings </p>                
+                        <p> $2.50 </p>
+                    </div>
+                    <div class="between_flex">
+                        <label> Total </label>                
+                        <label> $13.44 </label>
+                    </div>
+                </div>
+                
+                <button class="checkout_btn" data-toggle="modal" data-target="#proceedModal"> Proceed To Checkout </button>
+                <div class="toggle_btn">
+                    Pick-Up  <label class="switch"> <input type="checkbox"> <span class="slider round"></span> </label> Delivery
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Add new list modal -->
+    <form class="modal fade" id="newlistModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"> Add New List </h4>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body">
+                    <p> Enter new list name: </p>
+                    <input type="text" name="new_list">
+                </div>
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn cancel_btn" data-dismiss="modal"> <span>&#8249;</span>Cancel </button>
+                    <button type="submit" class="btn save_btn" data-dismiss="modal"> Save List <span>&#8250;</span> </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- delete list modal -->
+    <form class="modal fade deletelistModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> Delete List </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="between_flex">
+                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        <div>
+                            <h3> Weekend Shop </h3>
+                            <p> Are you sure you want to delete this list? </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn delete_cancel_btn" data-dismiss="modal"> <span>&#8249;</span> No, I'vechanged My Mind </button>
+                    <button type="submit" class="btn delete_btn" data-dismiss="modal"> Yes, Delete List! <span>&#8250;</span> </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Change list modal -->
+    <form class="modal fade" id="editModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> Change List Name </h4>
+                </div>
+                <div class="modal-body">
+                    <p> Enter new list name: </p>
+                    <input type="text" name="edit_list">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn cancel_btn" data-dismiss="modal"> <span>&#8249;</span>Cancel </button>
+                    <button type="submit" class="btn save_btn" data-dismiss="modal"> Save List <span>&#8250;</span> </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Save Trolley To New List modal -->
+    <form class="modal fade newitemModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> Save Trolley To New List </h4>
+                </div>
+                <div class="modal-body">
+                    <p> Enter new list name: </p>
+                    <input type="text" name="new_list">
+                    <p class="medium_text"> This list will be added to your lists </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn cancel_btn" data-dismiss="modal"> <span>&#8249;</span>Cancel </button>
+                    <button type="submit" class="btn save_btn" data-dismiss="modal"> Save List <span>&#8250;</span> </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Save Proceed modal -->
+    <form class="modal fade" id="proceedModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- modal header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"> Save Trolley To New List  </h4>
+                </div>
+                <div class="list-step1">
+                    <div class="modal-body">
+                        <p> Do you wish to save the current list or continue to checkout? </p>
+                        <input type="checkbox" name="next_time"><span class="small_text"> Don't show this next time</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn back_trolley_btn" data-dismiss="modal"> <span>&#8249;</span>Back </button>
+                        <button type="button" class="btn save_trolley_btn"> Save List </button>
+                        <button type="submit" class="btn process_btn"> Proceed To Checkout <span>&#8250;</span> </button>
+                    </div>
+                </div>
+                <div class="list-step2">
+                    <div class="modal-body">
+                        <p> Enter new list name: </p>
+                        <input type="text" name="new_list">
+                        <p class="medium_text"> This list will be added to your lists</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn back_trolley_btn cancel_btn"> <span>&#8249;</span>Back </button>
+                        <button type="submit" class="btn save_process_btn save_btn" data-dismiss="modal"> Save List & Proceed  To Checkout <span>&#8250;</span> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!--======== footer =========-->
+    <footer>
+        <div class="row footer_row">
+            <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12">
+                    <img src="../../Assets/image/logo.png" class="footer_logo">
+                    <img src="../../Assets/image/footer_logo_title.png" class="footer_logo_text">
+                </div>                
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> OUR STORE </p>
+                    <p> Fuel Offer </p>
+                    <p> Community Chest </p>
+                    <p> Catalog </p>
+                </div>
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> INFORMATION </p>
+                    <p> Delivery / Pick UP </p>
+                    <p> FAQ </p>
+                    <p> Return Policy </p>
+                    <p> Privacy Policy </p>
+                    <p> Terms & Conditions </p>
+                </div>
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> CONTACT </p>
+                    <p> Contact </p>
+                    <p> Employment </p>
+                    <p> Opening Hours </p>
+                    <p> Newsletter </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../../Assets/js/jquery.input-counter.min.js"></script>
+    <script src="../../Assets/js/style.js"></script>
+</body>
+</html>

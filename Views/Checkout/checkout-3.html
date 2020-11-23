@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Mandurah Checkout-3 </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://www.jsdelivr.com/package/gh/FortAwesome/Font-Awesome">
+    <link rel="stylesheet" href="../../Assets/scss/style.css">
+</head>
+
+<body>
+    <!--======== header =========-->
+    <header class="container-fluid">
+        <!-- .navbar -->
+        <div class="topnav" id="myTopnav">
+            <a href="#contact"> CONTACT </a>
+            <a href="#chest"> COMMUNITY CHEST </a>
+            <a href="#fuel"> FUEL OFFER </a>
+            <a href="#shop"> SHOP </a>
+            <a href="#home" class="active"> HOME </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <span class="logo"> <span class="logo_text"> Mandurah </span> <img src="../../Assets/image/logo.png"> </span>
+        </div>
+        <!-- search bar, toggle bar-->
+        <div class="action_bar">
+            <div class="action_bar01">
+                <i class="fa fa-th-list" id="sidebarCollapse"></i>
+                <i class="fa fa-home"> </i>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-circle"></i> <span>Hello Micheal!</span><b class="caret"></b> </a>
+                    </li>
+                </ul>
+                <div class="input-group">
+                    <input type="text" name="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="action_bar02">
+                <div class="cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    4 items
+                </div>
+                <div class="toggle_btn">
+                    $13.44  <label class="switch"> <input type="checkbox"> <span class="slider round"></span> </label>
+                </div>
+            </div>
+            <div class="action_bar02 mobile_show">
+                <div class="cart">
+                    <i class="fa fa-shopping-cart"></i> 4  &nbsp; &nbsp; $13.44 &nbsp; <i class="fa fa-eye"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search_bar mobile_show">
+            <input type="text" name="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <!--======== section =========-->
+    <section class="shopping_result_section">
+        <!--=== left sidebar ===-->
+        <div class="wrapper">
+            <nav id="sidebar">
+                <ul class="list-unstyled components">                
+                    <li>
+                        <a href="#mylists" data-toggle="collapse" aria-expanded="false"> My Lists </a>
+                        <ul class="collapse list-unstyled" id="mylists">
+                            <li>
+                                <a href="#weekendshop" data-toggle="collapse" aria-expanded="false"> Weekend Shop </a>
+                                <ul class="collapse list-unstyled" id="weekendshop">
+                                    <li><a href="#"> Weekend Shop 01 </a></li>
+                                    <li><a href="#"> Weekend Shop 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#midweekshop" data-toggle="collapse" aria-expanded="false"> Midweek Shop </a>
+                                <ul class="collapse list-unstyled" id="midweekshop">
+                                    <li><a href="#"> Midweek Shop 01 </a></li>
+                                    <li><a href="#"> Midweek Shop 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#bolognaise" data-toggle="collapse" aria-expanded="false"> Bolognaise Ingredients </a>
+                                <ul class="collapse list-unstyled" id="bolognaise">
+                                    <li><a href="#"> Bolognaise 01 </a></li>
+                                    <li><a href="#"> Bolognaise 02 </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#snacks" data-toggle="collapse" aria-expanded="false"> Snacks </a>
+                                <ul class="collapse list-unstyled" id="snacks">
+                                    <li><a href="#"> Snacks 01 </a></li>
+                                    <li><a href="#"> Snacks 02 </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"> Manage Lists </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#myfavourites" data-toggle="collapse" aria-expanded="false">My Favourites</a>
+                        <ul class="collapse list-unstyled" id="myfavourites">
+                            <li><a href="#football"> Football </a></li>
+                            <li><a href="#basketball"> Basketball </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#orderhistory" data-toggle="collapse" aria-expanded="false"> Order History </a>
+                        <ul class="collapse list-unstyled" id="orderhistory">
+                            <li><a href="#deliveryfood"> Delivery Food </a></li>
+                            <li><a href="#meeting"> Metting </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#specials" data-toggle="collapse" aria-expanded="false"> Specials </a>
+                        <ul class="collapse list-unstyled" id="specials">
+                            <li><a href="#miracle"> Miracle </a></li>
+                            <li><a href="#magic"> Magic </a></li>
+                            <li><a href="#star"> Star </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#alldepartments" data-toggle="collapse" aria-expanded="false"> All Departments </a>
+                        <ul class="collapse list-unstyled" id="alldepartments">
+                            <li><a href="#department1"> Department1 </a></li>
+                            <li><a href="#department2"> Department2 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--=== main content ===-->
+        <form method="post" action="">
+            <div class="flex shopping_flex">
+                <div class="shopping_result">
+                    <div class="shopping_lists">
+                        <div class="text-center">
+                            <img src="../../Assets/image/logo.png">
+                            <p> Shop 10/175 Mandurah Terrace, </p>
+                            <p> Mandurah WA 6210. </p>
+                            <p> Tel: (08) 9535 3644 </p>
+                        </div>
+                        <div class="shopping_list between_flex">
+                            <p class="grey"> Loved By <br> Lunchboxes Kids </p>
+                            <p class="grey"> X2 </p>
+                            <p> $8.00 </p>
+                        </div>
+                        <div class="shopping_list between_flex">
+                            <p class="grey"> CocoEarth Ghee <br> Butter 250ml </p>
+                            <p class="grey"> X1 </p>
+                            <p> $6.00 </p>
+                        </div>
+                        <div class="shopping_list between_flex">
+                            <p class="grey"> Erawan Rice Sticks <br> Pad Thai 200g </p>
+                            <p class="grey"> X3 </p>
+                            <p> $6.00 </p>
+                        </div>
+                        <div class="shopping_list">
+                            <div class="between_flex">
+                                <p class="large_text error_text"> Total savings </p>
+                                <p class="large_text error_text"> $2.00 </p>
+                            </div>
+                            <div class="between_flex">
+                                <p class="large_text"> Sub total </p>
+                                <p class="large_text"> $20.00 </p>
+                            </div>
+                            <div class="between_flex">
+                                <p class="large_text"> Pick-up </p>
+                                <p class="large_text"> $0.00 </p>
+                            </div>
+                        </div>
+                        <div class="total_price between_flex">
+                            <p class="large_text"> Total </p>
+                            <p class="large_text bold"> $20.00 </p>
+                        </div>
+                    </div>
+                    <div class="shopping_method text-center">
+                        <p> Payment Method: <br> Credit / Debit <br> Approved 27/10/20 09:28 </p> <br> <br>
+                        <p> Shipping Method </p>
+                        <p class="bold">
+                            Pickup at IGA Mandurah Branch <br> On 31/10/20, Sat <br> Between 2pm-4pm
+                        </p>
+                    </div>
+                </div>
+                <div class="shopping_thanks">
+                    <div class="text-center">
+                        <p class="large_text"> Thanks for shopping with us. </p>
+                    </div>
+                    <div class="flex">
+                        <img src="../../Assets/image/note.png">
+                        <p> Please note for the safety of our customers and team, all orders are contactless. <br>
+                        Make sure you follow the government guidelines.<br><br>
+                        Your order will be directed to Mandurah IGA store and they will notify you directly by phone to confirm your requirements, 
+                        pick and pack your order.</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        <!--=== right sidebar ===-->
+        <div class="wrapper_right">
+            <div class="rsb static">
+                <p class="trolley"> Trolley </p>
+                <div class="text-center empty_trolley"> Your Trolley Is Empty </div>
+                <button class="checkout_btn"> Proceed To Checkout </button>
+                <div class="toggle_btn">
+                    Pick-Up  <label class="switch"> <input type="checkbox"> <span class="slider round"></span> </label> Delivery
+                </div>        
+            </div>
+        </div>
+    </section>
+
+    <!--======== footer =========-->
+    <footer>
+        <div class="row footer_row">
+            <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
+                    <img src="../../Assets/image/logo.png" class="footer_logo">
+                    <img src="../../Assets/image/footer_logo_title.png" class="footer_logo_text">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> OUR STORE </p>
+                    <p> Fuel Offer </p>
+                    <p> Community Chest </p>
+                    <p> Catalog </p>
+                </div>
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> INFORMATION </p>
+                    <p> Delivery / Pick UP </p>
+                    <p> FAQ </p>
+                    <p> Return Policy </p>
+                    <p> Privacy Policy </p>
+                    <p> Terms & Conditions </p>
+                </div>
+                <div class="col-md-4 col-sm-12" style="padding:0">
+                    <p class="footer_title"> CONTACT </p>
+                    <p> Contact </p>
+                    <p> Employment </p>
+                    <p> Opening Hours </p>
+                    <p> Newsletter </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../Assets/js/jquery.input-counter.min.js"></script>
+    <script src="../../Assets/js/style.js"></script>
+</body>
+</html>

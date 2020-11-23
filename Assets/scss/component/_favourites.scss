@@ -1,0 +1,44 @@
+section.favourite_section{
+    background-color: $white-color;
+    .wrapper{
+        #sidebar{
+            ul{
+                li{
+                    a[aria-expanded=true]{
+                        border-bottom: none;
+                    }
+                    a[aria-expanded=true]:last-child{
+                        border-bottom: 2px solid $black-color;
+                        padding: 10px 0 5px 40px !important;
+                    }
+                }                
+            }
+        }
+    }
+    #favouriteCarousel{
+        .carousel-indicators{
+            display: none;
+        }
+        .carousel-inner{
+            padding: 15px;
+        }
+        .favourite_items{
+            .col-lg-4{
+                padding: 15px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .carousel-control{
+            background-image: unset;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .carousel-indicators{
+        display: none!important;
+    }
+}
